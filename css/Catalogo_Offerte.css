@@ -1,0 +1,97 @@
+body{
+    background-color: #ececec; 
+}
+
+header{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  position:fixed;
+  z-index: 9999; /*per essere sempre sopra qualsiasi elemento nella pagina*/
+  overflow:auto;
+  top: 10px;
+  left:9%;
+  right: 9%;
+  padding: 1px;
+  border: none;
+  border-radius: 25px;
+  background-color: #273248;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  justify-content:start;
+  
+}
+
+.navbar a {
+  color: white;
+  text-align:center;
+  margin: 0 ;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #FF5733;
+  
+}
+.btn{
+  color: white;
+  background-color: #FF5733;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 10px ;
+
+}
+.btn:hover{
+   background-color:#D64121;
+}
+#active{
+ border: 2px solid #FF5733;
+  border-radius: 25px;
+}
+
+.logo{
+  margin-left:20px;
+}
+
+.title{
+    text-align: center;
+    margin-top: 90px;
+    color: #FF5733;
+    font-family: sans-serif;
+}
+
+.catalogo{
+    display: flex;
+    justify-content: start; 
+    align-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.offerta{
+    color: #273248;
+    text-decoration: none;
+    margin: 0;
+}
+
+.offerta div{
+    margin: 3px;
+  padding: 10px;
+  border: 1px solid #273248;
+  border-radius: 25px;
+  background-color: white;
+    
+}
+.offerta div:hover{
+    background-color: whitesmoke;
+}
+.offerta img{
+  border: none;
+  border-radius: 25px;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Students</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        <header >
+            
+            <img class="logo" src="images/logo.png" width="157" height="53" alt="logo">
+            
+            <ul class="navbar">
+                <li><a id="active" href="index.html">Home</a></li>
+                <li><a  href="Catalogo_Offerte.html">Offerte</a></li>  
+            </ul>
+            <button class="btn">Accedi</button>
+        </header>
+        <section>
+            <img class="welcome-img" src="images/welcome-photo.jpg" width="1600" alt="welcome-photo">
+            <div class="option">
+                <a href="#come-funziona">
+                    <img  src="images/C-F-Icon.png"  width="110" height="110" alt="Come-funziona">
+                    <h1>Come funziona</h1>
+                    <h4>Sul nostro sito puoi torvare<br>facilemente la tua casa</h4>
+                </a>
+                <a href="#chi-siamo">
+                    <img  src="images/C-S-Icon.png" width="110" height="110" alt="Chi-Siamo">
+                    <h1>Chi Siamo</h1>
+                    <h4>Sul nostro sito puoi torvare<br>facilemente la tua casa</h4>
+                </a>
+                <a href="#faq">
+                    <img  src="images/FAQ-Icon.png" width="110" height="110" alt="FAQ">
+                    <h1>FAQ</h1>
+                    <h4>Sul nostro sito puoi torvare<br>facilemente la tua casa</h4>
+                </a>
+            </div>
+        </section>
+        <section class="offerte" style="background-image: url(images/offerte-photo.jpg)">
+            <button class="btn">Vedi le offerte</button>
+        </section>
+        <section class="come-funziona" id='come-funziona'>
+            <h1 class="title">Come Funziona ?</h1>
+            <span class='switch'>
+                <input type="checkbox" id="switcher" onclick="flipCards()">
+                <label for="switcher"></label><br>
+            </span>
+            <div class="steps">
+                <div class="card">
+                    <div class="card__face card__face--front">
+                        <div class="number"><h1>1</h1></div>
+                        <img  src="images/Registrati.png"  width="200" height="150" alt="registrati">
+                        <h2>Registrati</h2>
+                        <p>Puoi creare il tuo account locatario cliccando sul bottone Login in alto a destra.</p>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="number"><h1>1</h1></div>
+                        <img  src="images/Registrati.png"  width="200" height="150" alt="registrati">
+                        <h2>Registrati</h2>
+                        <p>Puoi creare il tuo account Locatore cliccando sul bottone Login in alto a destra.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__face card__face--front">
+                        <div class="number"><h1>2</h1></div>
+                        <img  src="images/Cerca.jpg" width="200" height="150" alt="cerca">
+                        <h2>Cerca</h2>
+                        <p>Sul nostro sito puoi scegliere la tua casa tra tante offerte basta andare alla pagina di offerte.</p>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="number"><h1>2</h1></div>
+                        <img  src="images/Inserisci.jpg"  width="200" height="150" alt="registrati">
+                        <h2>Inserisci</h2>
+                        <p>Sul nostro sito puoi inserire e modificare l'alloggio che vuoi affitare tramite la sezione dedicata nel tuo account.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    
+                    <div class="card__face card__face--front">
+                        <div class="number"><h1>3</h1></div>
+                        <img  src="images/Opziona.jpg" width="200" height="150" alt="opziona">
+                        <h2>Opziona</h2>
+                        <p>Una volta scelta l'offerta puoi opzionarla mandando una richiesta al locatore tramite l'area di messaggistica e fare il contratto.<p>
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="number"><h1>3</h1></div>
+                        <img  src="images/Contatta.jpg"  width="200" height="150" alt="registrati">
+                        <h2>Contatta</h2>
+                        <p>Sul nostro sito puoi visualizzare tutte le richieste inviate dai cliente per gli alloggi.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class='chi-siamo' id="chi-siamo">
+            <h1 class="title">Chi Siamo</h1>
+            <div class="navbar">
+                <label class="container">
+                    <span class="intro">Introduzione</span>
+                    <input type="radio" checked="checked" name="radio" value="intro" onclick="toggleText(this.value)">
+                </label>
+                <label class="container">
+                    <span class="miss">Missione</span>
+                    <input type="radio"  name="radio" value="miss" onclick="toggleText(this.value)">
+                </label>
+                <label class="container">
+                    <span class="fond">Fondatore</span>
+                    <input type="radio" name="radio" value="fond" onclick="toggleText(this.value)">
+                </label>
+            </div>
+            <div class="text-area">
+                <p id="intro">Questo sito peremtte agli studenti di trovare appartamenti o posti letto da affittare</p>
+                <p id="miss">Il nostro obiettivo la realizzazione di un sito Web finalizzato a far incontrare l’offerta di locazione di alloggi a studenti con la relativa domanda</p>
+                <p id="fond">Corso di tecnologie web</p>
+            </div>
+            
+        </section>
+        <section class="faq" id="faq">
+            <img class="faq-photo" src="images/FAQ.jpg" alt="faq-photo">
+            <div>
+                <button class="accordion"  onclick="accordion(this,'q1')" >Come posso registrarmi al sito?</button>
+                <div class="panel" id="q1">
+                  <p>Puoi registrarti al sito tramite la sezione Accedi a cui puoi recarti tramite il bottone in alto a destra</p>
+                </div>
+
+                <button class="accordion" onclick="accordion(this,'q2')">Come posso vedere le offerte ?</button>
+                <div class="panel" id="q2">
+                  <p>Puoi visualizzare il catalogo delle offerte tramite la sezione offerte a cui puoi recarti tramite il bottone vedi offerte</p>
+                </div>
+
+                <button class="accordion" onclick="accordion(this,'q3')">Come posso cancellare il mio alloggio ?</button>
+                <div class="panel" id="q3">
+                  <p>Puoi cancellare o modificare il tuo alloggio tramite l'area riservta del tuo account</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h1 class="contact" >Contattaci</h1>
+            <div class="contattaci">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.939933218729!2d13.515312415631946!3d43.58696746472868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132d802321a175a5%3A0x3e1261137bd6ae51!2sVia+Brecce+Bianche%2C+12%2C+60131+Ancona%2C+Italy!5e0!3m2!1sen!2sus!4v1454947673841" width="500" height="280"></iframe>
+                <div class="info">
+                    <div class="info-1">
+                        <div>
+                            <img  src="images/location.png"  width="80" height="80" alt="locaion">
+                            <h2>INDIRIZZO:</h2>
+                            <p>Via Brecce Bianche,<br> 12 60131 Ancona AN Italy</p>
+                        </div>
+                        <div>
+                            <img  src="images/email.png"  width="80" height="80" alt="email">
+                            <h2>EMAIL:</h2>
+                            <a href="mailto:hello@company.com">hello@company.com</a>
+                            <a href="mailto:support@company.com">support@company.com</a>
+                        </div>
+                    </div>
+                    <div class="info-1">
+                        <div>
+                            <img  src="images/phone.png" width="80" height="80" alt="phone">
+                            <h2>CHIAMACI:</h2>
+                            <p>1(234)567-891</p>
+                            <p>1(234)987-654</p>
+                        </div>
+                        <div>
+                            <h2>CONTATTACI:</h2>
+                            <p>Seguici su canali di social-media</p>
+                            <img alt="social-media" src="images/social-media.png"  width="108" height="35" usemap="#photo-social-media">
+                            <map name="photo-social-media">
+                                 <area  alt="facebook" title="facebook" href="https://www.facebook.com/" coords="0,0,20,68" shape="rect">
+                                 <area alt="Instagram" title="Instagaram" href="https://www.instagram.com/?hl=en" coords="24,0,65,30" shape="rect">
+                                 <area  alt="Twitter" title="Twitter" href="https://twitter.com/i/flow/login" coords="40,0,120,60" shape="rect">
+                            </map>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
